@@ -10,12 +10,12 @@ import android.widget.Button;
 public class LandingActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {   //Whenever any activity starts, the first function that is called by the android is
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_activity);
         final Context context=this;
         Button moodLifterButton;
-        moodLifterButton = (Button) findViewById(R.id.b21);
+        moodLifterButton = findViewById(R.id.b21);
         moodLifterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class LandingActivity extends AppCompatActivity {
             }
         });
         Button autoMessageButton;
-        autoMessageButton = (Button) findViewById(R.id.b22);
+        autoMessageButton = findViewById(R.id.b22);
         autoMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
